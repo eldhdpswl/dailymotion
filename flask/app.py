@@ -8,7 +8,7 @@ import json
 application = Flask(__name__)
 
 # ======Flask 에 필요한 설정 정보 config.json 에서 가져오기======
-with open('local_config.json', 'r') as f:
+with open('config.json', 'r') as f:
     config = json.load(f)
 db_info = config['DB']
 
