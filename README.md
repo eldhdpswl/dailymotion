@@ -1,6 +1,6 @@
 # DailyMotion
 
-![](preview/home.png)
+![](flask/preview/home.png)
 
 
 
@@ -14,7 +14,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 ## 2. 구성
 
-![](preview/configuration.png)
+![](flask/preview/configuration.png)
 
 ## 3. 서버
 
@@ -31,8 +31,8 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 - NaverCloudFunction 을 사용하여 서버의 DB 에 원격 접속하여 수집한 데이터를 저장한다.
   - [Naver Cloud Function ](https://www.ncloud.com/product/compute/cloudFunctions)
 
-![](preview/mongodb.png)
-![](preview/mongodb_data.png)
+![](flask/preview/mongodb.png)
+![](flask/preview/mongodb_data.png)
 
 ### 1. 뉴스 수집
 
@@ -247,7 +247,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/daily_sentiment/__main__.py)
 
-![](preview/mongodb_daily.png)
+![](flask/preview/mongodb_daily.png)
 
 ## 5. Roadmap
 
@@ -298,16 +298,16 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 ### Home
 
-![](preview/home.gif)
+![](flask/preview/home.gif)
 
 ### Calendar
 
-![](preview/calendar.gif)
+![](flask/preview/calendar.gif)
 
 ### News
 
-![](preview/news.gif)
+![](flask/preview/news.gif)
 
 ### Contact
 
-![](preview/contact.gif)
+![](flask/preview/contact.gif)
