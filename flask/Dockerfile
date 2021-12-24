@@ -2,7 +2,7 @@
 FROM python:3
 
 RUN apt-get -y update
-RUN apt-get upgrade
+RUN apt-get -y upgrade
 
 RUN mkdir /app
 ADD . /app
