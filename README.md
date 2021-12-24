@@ -290,11 +290,11 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 | Home                       | Calendar                       |
 | -------------------------- | ------------------------------ |
-| <img src=preview/home.png> | <img src=preview/calendar.png> |
+| <img src=flask/preview/home.png> | <img src=flask/preview/calendar.png> |
 
 | News                       | Contact                       |
 | -------------------------- | ----------------------------- |
-| <img src=preview/news.png> | <img src=preview/contact.png> |
+| <img src=flask/preview/news.png> | <img src=flask/preview/contact.png> |
 
 ### Home
 
