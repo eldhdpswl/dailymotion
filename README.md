@@ -14,6 +14,12 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 ## 2. 구성
 
+> **Project Duration** : 2021.10.24 ~ 2021.11.02
+
+![](flask/preview/configuration.png)
+
+> **Server renewal Duration** : 2021.11.10 ~ 2021.12.23
+
 ![](flask/preview/dailymotion_architech.png)
 
 ## 3. 서버
