@@ -14,7 +14,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 
 ## 2. 구성
 
-![](flask/preview/configuration.png)
+![](flask/preview/dailymotion_architech.png)
 
 ## 3. 서버
 
@@ -22,7 +22,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
   - [Naver Cloud Server](https://www.ncloud.com/product/compute/server)
 - Micro server / ubuntu-18.04 / 2vCPU, 4GB Mem, 50GB Disk
 - MongoDB 를 사용하여 데이터 관리
-- Flask 를 사용한 웹 서버
+- Flask, Nginx, WSGI(uWSGI), Docker를 사용한 웹 서버
 
 ## 4. 데이터 수집 / 가공
 
@@ -78,7 +78,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
                     item['content'] = item['description']
 ```
 
-소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/news_compile/__main__.py)
+소스코드 [링크](https://github.com/eldhdpswl/naver-cloud-hackathon/blob/main/news_compile/__main__.py)
 
 ### 2. 뉴스 본문 내용 수집
 
@@ -110,7 +110,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
         content = naver_content.text.strip()
 ```
 
-소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/news_compile/__main__.py)
+소스코드 [링크](https://github.com/eldhdpswl/naver-cloud-hackathon/blob/main/news_compile/__main__.py)
 
 ### 3. Summary
 
@@ -155,7 +155,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
         summary_txt = result_response['summary']
 ```
 
-소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/news_summary/__main__.py)
+소스코드 [링크](https://github.com/eldhdpswl/naver-cloud-hackathon/blob/main/news_summary/__main__.py)
 
 ### 4. Sentiment 분석
 
@@ -189,7 +189,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
         sentiment_items.append(j)
 ```
 
-소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/news_sentiment/__main__.py)
+소스코드 [링크](https://github.com/eldhdpswl/naver-cloud-hackathon/blob/main/news_sentiment/__main__.py)
 
 ### 5. Daily Sentiment DB Collection 만들기
 
@@ -245,7 +245,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
     collection_new.insert_one(sentiment)
 ```
 
-소스코드 [링크](https://github.com/inwookie/naver-cloud-hackathon/blob/main/daily_sentiment/__main__.py)
+소스코드 [링크](https://github.com/eldhdpswl/naver-cloud-hackathon/blob/main/daily_sentiment/__main__.py)
 
 ![](flask/preview/mongodb_daily.png)
 
@@ -283,7 +283,7 @@ Daily + Emotion 이라는 의미로 하루하루 경제, 주식 키워드에 관
 **Release**
 
 - [x] Domain 사기
-- [x] FileZilla 사용해서 서버에 업로드 하기
+- [x] Github, FileZilla 사용해서 서버에 업로드 하기
 - [x] 가상환경 구현하기
 
 ## 6. 데모
