@@ -9,6 +9,8 @@ services:
             - APP_NAME=DailyMotionTest 
         expose:
             - 8080
+        volumes:
+            - ./flask/socket:/app/socket
 
     nginx:
         build: ./nginx
@@ -16,3 +18,7 @@ services:
         restart: always
         ports:
             - "5000:5000"
+        volumes:
+            - ./flask/socket:/app/socket
+        depends_on:
+            - flask
