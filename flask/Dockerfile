@@ -12,4 +12,4 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-CMD ["uwsgi","uwsgi.ini"]
+CMD ["uwsgi", "--ini" ,"uwsgi.ini"]
